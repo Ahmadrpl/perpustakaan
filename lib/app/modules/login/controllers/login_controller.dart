@@ -21,10 +21,12 @@ class LoginController extends GetxController {
   @override
   void onReady() {
     super.onReady();
+
     String status = StorageProvider.read(StorageKey.status);
     if(status == "logger"){
       Get.offAllNamed(Routes.HOME);
     }
+
   }
 
   @override

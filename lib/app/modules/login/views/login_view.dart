@@ -36,6 +36,7 @@ class LoginView extends GetView<LoginController> {
               }
               return null;
             },
+
           ),
               Obx(() =>
               controller.loadinglogin.value?
@@ -46,6 +47,13 @@ class LoginView extends GetView<LoginController> {
                   child: Text("Login")))
             ], // children
           ),
+
+          ), // TextFormField
+          ElevatedButton(onPressed: (){
+
+          },
+             child: Text("login"))
+>>>>>>> origin/master
         ),
       ),
     );
